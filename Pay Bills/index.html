@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay Bills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding-right: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5c740;
+            position: relative;
+        }
+        .circle {
+            padding: 80px;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icons {
+            padding: 5px;
+            position:absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f5db7e;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+            align-items: center;
+        }
+        .icon1 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+        .icon2 { top: 15%; left: 85%; transform: translate(-50%, -50%); }
+        .icon3 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+        .icon4 { bottom: 15%; left: 85%; transform: translate(-50%, 50%); }
+        .icon5 { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
+        .icon6 { bottom: 15%; left: 15%; transform: translate(-50%, 50%); }
+        .icon7 { top: 50%; left: 0; transform: translate(-50%, -50%); }
+        .icon8 { top: 15%; left: 15%; transform: translate(-50%, -50%); }
+
+        h1 {
+            animation: moveText 4s ease-in-out infinite;
+        }
+        
+        /* Animation for the text */
+        @keyframes moveText {
+            0% {
+                transform: translateX(0);
+                color: white;
+            }
+            50% {
+                transform: translateX(150%);
+                color: black;
+            }
+            100% {
+                transform: translateX(0);
+                color: white;
+            }
+        }
+
+        /* Rotate icons */
+        .circle {
+            animation: rotateCircle 4s infinite ease-in-out;
+        }
+
+        @keyframes rotateCircle {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><h1>Pay bills instantly</h1></div>
+        <div class="circle">
+            <div class="icons icon1"><i class="fa-solid fa-phone"></i></div>
+            <div class="icons icon2"><i class="fa-solid fa-laptop"></i></div>
+            <div class="icons icon3"><i class="fa-brands fa-twitter"></i></div>
+            <div class="icons icon4"><i class="fa-brands fa-facebook"></i></div>
+            <div class="icons icon5"><i class="fa-brands fa-youtube"></i></div>
+            <div class="icons icon6"><i class="fa-regular fa-lightbulb"></i></div>
+            <div class="icons icon7"><i class="fa-solid fa-camera"></i></div>
+            <div class="icons icon8"><i class="fa-solid fa-house"></i></div>
+        </div>
+    </div>
+</body>
+</html>

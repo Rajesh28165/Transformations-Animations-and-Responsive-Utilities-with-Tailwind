@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sliding boxes</title>
+    <style>
+      .container {
+        height: 100vh;
+      }
+      .box {
+        width: 50%;
+        border-radius: 20px;
+        padding: 3rem 0;
+        background: linear-gradient(to right, #070853, #41c8dd);
+        margin: 1rem 0;
+        text-align: center;
+        color: white;
+        font-size: x-large;
+      }
+      .box:nth-child(even) {
+        animation: right_left 3s infinite;
+      }
+      .box:nth-child(odd) {
+        animation: left_right 3s infinite;
+      }
+
+      @keyframes right_left {
+        0% {
+          transform: translateX(90vw);
+        }
+        100% {
+          transform: translateX(50vw);
+        }
+      }
+      @keyframes left_right {
+        0% {
+          transform: translateX(-90vw);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box-1</div>
+      <div class="box">Box-2</div>
+      <div class="box">Box-3</div>
+      <div class="box">Box-4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaadi</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <section
+      class="relative bg-cover bg-center h-90"
+      style="
+        background-image: url('https://img2.shaadi.com/assests/2024/images/shaadi-north-desktop.webp');
+      "
+    >
+      <nav class="flex justify-around items-center">
+        <div>
+          <img
+            src="https://img2.shaadi.com/assests/2021/images/Matrimony-Service-by-Shaadi.com.png"
+            alt="Shaadi.com logo"
+          />
+        </div>
+        <div class="text-white space-x-8">
+          <a href=""> Login <i class="fa-solid fa-angle-down"></i></a>
+          <a href=""
+            ><i class="fa-regular fa-user"></i> Help
+            <i class="fa-solid fa-angle-down"></i
+          ></a>
+        </div>
+      </nav>
+
+      <!-- info part in bg-img -->
+      <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+      <div class="relative pt-52 md:pt-80 text-white text-center">
+        <h1 class="text-2xl md:text-4xl font-bold md:mb-6">
+          Trusted Matrimony & Matchmaking Service
+        </h1>
+        <form action="" class="flex justify-center text-white shadow-lg p-8">
+          <div
+            class="w-70 bg-black bg-opacity-50 grid grid-cols-2 md:grid-cols-4 gap-4"
+          >
+            <div>
+              <label
+                class="block mb-2 text-sm font-medium text-lg"
+                for="lookingFor"
+              >
+                I'm looking for a
+              </label>
+              <select
+                class="block w-full p-2 border rounded-md"
+                name="looking for"
+                id="looking_for"
+              >
+                <option>Man</option>
+                <option>Woman</option>
+              </select>
+            </div>
+            <div>
+              <label class="block mb-2 text-sm font-medium text-lg" for="age">
+                Age
+              </label>
+              <div class="rounded-md flex">
+                <input
+                  class="p-2 md:w-20 w-16"
+                  type="number"
+                  placeholder="22"
+                />
+                <div class="px-5 font-medium text-lg">to</div>
+                <input
+                  class="p-2 md:w-20 w-16"
+                  type="number"
+                  placeholder="27"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block mb-2 text-sm font-medium text-lg" for="religion">
+                Of religion
+              </label>
+              <input
+                type="text"
+                class="w-full p-2 border rounded-md"
+                placeholder="Religion"
+              />
+            </div>
+            <div>
+              <label class="block mb-2 text-sm font-medium text-lg" for="motherTongue">
+                Mother Tongue
+              </label>
+              <input
+                type="text"
+                class="w-full p-2 border rounded-md"
+                placeholder="Mother Tongue"
+              />
+            </div>
+            <button
+              class="w-full bg-indigo-600 mt-6 text-white rounded-md hover:bg-indigo-700 py-4"
+            >
+              Let's Begin
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- special someone -->
+    <section class="bg-[#f1f1f1] pt-16">
+      <div class="w-[80%] mx-auto bg-blue-300 h-90">
+        <div
+          class="bg-[#1A1236] text-center p-10 md:flex md:justify-between md:items-center md:px-12 rounded-lg"
+        >
+          <div
+            class="text-left text-white md:flex md:flex-col md:justify-center border-b md:border-b-0 md:border-r pb-6 md-pb-0 md:pr-16 lg:pr-24 border-[#D7BA85]"
+          >
+            <h2 class="text-lg lg:text-3xl font-semibold mb-3 text-[#D7BA85]">
+              Exclusive & Personalised Matchmaking by
+            </h2>
+            <h3 class="text-2xl font-bold mb-5 text-[#D7BA85]">Shaadi.com</h3>
+            <p class="text-white font-semibold text-lg hover:underline">
+              Top Rated Consultants | 5 times higher success rates | 100%
+              Privacy
+            </p>
+          </div>
+
+          <div class="mt-6 md:mt-0 md:pl-16">
+            <img src="vip_logo.webp" alt="VIP Logo" />
+            <button
+              class="mt-6 bg-[#D7BA85] text-[#1A1236] py-3 px-6 rounded-lg w-full font-semibold hover:bg-[#bfa270] transition-colors duration-300"
+            >
+              Get Invited <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- three circles -->
+      <div class="bg-gray-100 py-12">
+        <h2 class="text-4xl font-semibold text-center text-red-400 mt-8 mb-16">
+          Find your Special Someone
+        </h2>
+
+        <div
+          class="flex gap-12 flex-col items-center md:flex-row md:justify-around md:items-start"
+        >
+          <div class="flex flex-col items-center text-center">
+            <div class="bg-[#00BCD4] p-12 rounded-full relative">
+              <i class="fa-solid fa-house-user text-4xl text-white"></i>
+              <div
+                class="absolute bg-white px-4 py-2 mt-4 rounded-full text-red-400 text-lg font-bold"
+              >
+                1
+              </div>
+            </div>
+            <h3 class="text-xl text-[#03b8d3] font-semibold mt-4">Sign Up</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Register for free & put up your Matrimony Profile
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="bg-[#00BCD4] p-12 rounded-full relative">
+              <i class="fa-solid fa-house-user text-4xl text-white"></i>
+              <div
+                class="absolute bg-white px-4 py-2 mt-4 rounded-full text-red-400 text-lg font-bold"
+              >
+                2
+              </div>
+            </div>
+            <h3 class="text-xl text-[#03b8d3] font-semibold mt-4">Connect</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Select & Connect with Matches you like
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center text-center">
+            <div class="bg-[#00BCD4] p-12 rounded-full relative">
+              <i class="fa-solid fa-house-user text-4xl text-white"></i>
+              <div
+                class="absolute bg-white px-4 py-2 mt-4 rounded-full text-red-400 text-lg font-bold"
+              >
+                3
+              </div>
+            </div>
+            <h3 class="text-xl text-[#03b8d3] font-semibold mt-4">Interact</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Become a Premium Member & Start a Conversation
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="w-[80%] mx-auto">
+        <div class="py-10">
+          <h1
+            class="text-lg md:text-4xl font-medium text-center text-red-400 my-20"
+          >
+            Matrimony Service with Millions of Success Stories
+          </h1>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 mt-32"
+          >
+            <div class="bg-white rounded-lg shadow-lg">
+              <img
+                class="w-full h-40 object-cover rounded-t-lg"
+                src="https://images.pexels.com/photos/1556204/pexels-photo-1556204.jpeg"
+                alt="Success Story 1"
+              />
+              <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-800">
+                  Anjali & Rahul
+                </h2>
+                <p class="mt-2 text-gray-600">
+                  We met on Shaadi.com and the connection was instant. Our
+                  families got involved and soon, we were married.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg">
+              <img
+                class="w-full h-40 object-cover rounded-t-lg"
+                src="https://images.pexels.com/photos/1556204/pexels-photo-1556204.jpeg"
+                alt="Success Story 2"
+              />
+              <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-800">Sonal & Varun</h2>
+                <p class="mt-2 text-gray-600">
+                  Our journey started on Shaadi.com, and now we are planning our
+                  big day! So grateful for this platform.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg">
+              <img
+                class="w-full h-40 object-cover rounded-t-lg"
+                src="https://images.pexels.com/photos/1556204/pexels-photo-1556204.jpeg"
+                alt="Success Story 3"
+              />
+              <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-800">
+                  Vijay & Vrushali
+                </h2>
+                <p class="mt-2 text-gray-600">
+                  After connecting on Shaadi.com, our journey towards love and
+                  understanding grew quickly. Thanks to Shaadi.com for bringing
+                  us together.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#1A1236] py-8 mt-16">
+      <div class="w-[80%] mx-auto flex justify-between text-white">
+        <div class="flex flex-col space-y-4">
+          <h3 class="font-bold text-lg">About Us</h3>
+          <p class="text-sm">
+            Shaadi.com is a leading matrimonial service offering personalized
+            matchmaking solutions.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <h3 class="font-bold text-lg">Contact</h3>
+          <p class="text-sm">Email: support@shaadi.com</p>
+          <p class="text-sm">Phone: +91 12345 67890</p>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <h3 class="font-bold text-lg">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
